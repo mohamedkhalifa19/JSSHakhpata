@@ -21,6 +21,9 @@ const addItem = function () {
       setTimeout(() => {
         e.target.closest("li").classList.add("remove");
       }, 2000);
+      setTimeout(() => {
+        e.target.closest("li").style.display = "none";
+      }, 3000);
     });
   });
 };
