@@ -1,12 +1,21 @@
 const addBtn = document.getElementById("add-btn");
 const taskInp = document.querySelector('[type="text"]');
 const todos = document.querySelector(".todos");
+const h1 = document.querySelector("h1");
+const str = "Todo List";
+let i = 0;
 setTimeout(() => {
   document.querySelector(".loader").style.display = "none";
-}, 2500);
+}, 1500);
+
 const validate = function () {
   taskInp.value = "";
 };
+const myInterval = setInterval(() => {
+  h1.textContent += str[i];
+  i++;
+  if (i === str.length) clearInterval(myInterval);
+}, 1600);
 const addItem = function () {
   taskInp.value.trim()
     ? todos.insertAdjacentHTML(
