@@ -1,7 +1,9 @@
 const addBtn = document.getElementById("add-btn");
 const taskInp = document.querySelector('[type="text"]');
 const todos = document.querySelector(".todos");
-
+setTimeout(() => {
+  document.querySelector(".loader").style.display = "none";
+}, 7500);
 const validate = function () {
   taskInp.value = "";
 };
