@@ -3,7 +3,7 @@ const taskInp = document.querySelector('[type="text"]');
 const todos = document.querySelector(".todos");
 setTimeout(() => {
   document.querySelector(".loader").style.display = "none";
-}, 7500);
+}, 2500);
 const validate = function () {
   taskInp.value = "";
 };
